@@ -3,15 +3,21 @@
 [![browser support][3]][4]
 
 
-Extend like a boss
+Extend with respect for `undefined`
 
-xtend is a basic utility library which allows you to extend an object by
+xtendr is a basic utility library which allows you to extend an object by
 appending all of the properties from each object in a list. When there are
-identical properties, the right-most property takes presedence.
+identical properties, the right-most property that is not `undefiend`
+takes presedence, except where all values are `undefined`.
 
-In repsect of language semantics, values which are `undefined` are considered
-such. That is, an undefined value will not overwrite a value, because the
-object property, as the name describes, is actually undefined.
+An undefined value will not overwrite a value, because the object property as
+the name describes, is actually undefined.
+
+Furthermore, the resuling object will have all keys set, even if the only value
+for that key is undefined. The preserves your right to define the enumerable
+keys, but to respect undefined values where you do not wish to override.
+
+xtendr patches `xtend` to respect the meaning of `undefined` vs `null`
 
 ## Examples
 
@@ -22,12 +28,12 @@ var extend = require("xtendr")
 var combination = extend({
     a: "a"
 }, {
-    b: "b"
+    a: undefined,
+    b: "b",
+    c: undefined
 })
-// { a: "a", b: "b" }
+// { a: "a", b: "b", c: undefined }
 ```
-
-## Stability status: Locked
 
 ## MIT Licenced
 
