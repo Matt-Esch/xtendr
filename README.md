@@ -1,4 +1,4 @@
-# xtend
+# xtendr
 
 [![browser support][3]][4]
 
