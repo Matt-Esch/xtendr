@@ -2,51 +2,34 @@
   "name": "xtendr",
   "version": "1.1.0",
   "description": "extend with respect for undefined",
-  "keywords": [
-    "extend",
-    "merge",
-    "options",
-    "opts",
-    "object",
-    "array"
-  ],
-  "author": "Matt-Esch <matt@gmattesch.info>",
+  "keywords": [],
+  "author": "Matt-Esch <matt@mattesch.info>",
   "repository": "git://github.com/Matt-Esch/xtendr.git",
   "main": "index",
-  "scripts": {
-    "test": "node test"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "tape": "~2.12.3"
-  },
-  "homepage": "https://github.com/MAtt-Esch/xtendr",
-  "contributors": [
-    {
-      "name": "Matt Esch"
-    },
-    {
-      "name": "Jake Verbaten"
-    }
-  ],
+  "homepage": "https://github.com/Matt-Esch/xtendr",
+  "contributors": [{
+    "name": "Matt-Esch"
+  }],
   "bugs": {
     "url": "https://github.com/Matt-Esch/xtendr/issues",
     "email": "matt@mattesch.info"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://github.com/Matt-Esch/xtendr/raw/master/LICENSE"
-    }
-  ],
-  "engines": {
-    "node": ">=0.4"
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "~1.0.2"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://github.com/Matt-Esch/xtendr/raw/master/LICENSE"
+  }],
+  "scripts": {
+    "test": "node test"
   },
   "testling": {
-    "files": "test/*.js",
+    "files": "test.js",
     "browsers": [
       "ie/8..latest",
-      "firefox/17..latest",
+      "firefox/16..latest",
       "firefox/nightly",
       "chrome/22..latest",
       "chrome/canary",
