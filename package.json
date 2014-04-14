@@ -18,7 +18,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "tape": "~1.1.0"
+    "tape": "~2.12.3"
   },
   "homepage": "https://github.com/MAtt-Esch/xtendr",
   "contributors": [
