@@ -39,11 +39,14 @@
       "url": "http://github.com/Matt-Esch/xtend/raw/master/LICENSE"
     }
   ],
+  "engines": {
+    "node": ">=0.4"
+  },
   "testling": {
-    "files": "test.js",
+    "files": "test/*.js",
     "browsers": [
-      "ie/7..latest",
-      "firefox/16..latest",
+      "ie/8..latest",
+      "firefox/17..latest",
       "firefox/nightly",
       "chrome/22..latest",
       "chrome/canary",
@@ -51,10 +54,8 @@
       "opera/next",
       "safari/5.1..latest",
       "ipad/6.0..latest",
-      "iphone/6.0..latest"
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
     ]
-  },
-  "engines": {
-    "node": ">=0.4"
   }
 }
