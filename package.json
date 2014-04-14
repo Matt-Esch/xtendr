@@ -1,7 +1,7 @@
 {
-  "name": "xtend",
-  "version": "3.0.0",
-  "description": "extend like a boss",
+  "name": "xtendr",
+  "version": "1.0.0",
+  "description": "extend with respect for undefined",
   "keywords": [
     "extend",
     "merge",
@@ -10,8 +10,8 @@
     "object",
     "array"
   ],
-  "author": "Raynos <raynos2@gmail.com>",
-  "repository": "git://github.com/Raynos/xtend.git",
+  "author": "Matt-Esch <matt@gmattesch.info>",
+  "repository": "git://github.com/Matt-Esch/xtendr.git",
   "main": "index",
   "scripts": {
     "test": "node test"
@@ -20,23 +20,23 @@
   "devDependencies": {
     "tape": "~1.1.0"
   },
-  "homepage": "https://github.com/Raynos/xtend",
+  "homepage": "https://github.com/MAtt-Esch/xtendr",
   "contributors": [
     {
-      "name": "Jake Verbaten"
+      "name": "Matt Esch"
     },
     {
-      "name": "Matt Esch"
+      "name": "Jake Verbaten"
     }
   ],
   "bugs": {
-    "url": "https://github.com/Raynos/xtend/issues",
-    "email": "raynos2@gmail.com"
+    "url": "https://github.com/Matt-Esch/xtendr/issues",
+    "email": "matt@mattesch.info"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/raynos/xtend/raw/master/LICENSE"
+      "url": "http://github.com/Matt-Esch/xtend/raw/master/LICENSE"
     }
   ],
   "testling": {

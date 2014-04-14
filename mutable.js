@@ -6,7 +6,11 @@ function extend(target) {
 
         for (var key in source) {
             if (source.hasOwnProperty(key)) {
-                target[key] = source[key]
+                var value = source[key]
+
+                if (!(key in target) || value !== undefined) {
+                    target[key] = source[key]
+                }
             }
         }
     }

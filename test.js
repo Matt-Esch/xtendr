@@ -61,3 +61,50 @@ test("mutable", function (assert) {
     assert.equal(a.bar, "baz")
     assert.end()
 })
+
+test("mutable undefined", function (assert) {
+    var x = {
+        a: "a"
+    }
+
+    var y = {
+        a: undefined,
+        b: "b",
+        c: undefined
+    }
+
+    mutableExtend(x, y)
+
+    assert.equal(x.a, "a")
+    assert.equal(x.b, "b")
+    assert.equal(x.c, undefined)
+    assert.end()
+})
+
+test("immutable undefined", function (assert) {
+    var x = {
+        a: "a"
+    }
+
+    var y = {
+        a: undefined,
+        b: "b",
+        c: undefined
+    }
+
+    var z = extend(x, y)
+
+    assert.equal(x.a, "a")
+    assert.notOk("b" in x)
+    assert.notOk("c" in x)
+
+    assert.equal(y.a, undefined)
+    assert.equal(y.b, "b")
+    assert.equal(y.c, undefined)
+
+    assert.equal(z.a, "a")
+    assert.equal(z.b, "b")
+    assert.equal(z.c, undefined)
+
+    assert.end()
+})
